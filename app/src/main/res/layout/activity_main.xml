@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alwaysDrawnWithCache="false"
+    android:animateLayoutChanges="false"
+    android:animationCache="false"
+    android:background="@color/menuBGColor"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/leftMenuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="1490sp"
+        android:layout_marginBottom="130dp"
+        android:background="@color/menuBGColor"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80sp"
+            android:backgroundTint="@color/darkBlue"
+            android:text="@string/button_1"
+            android:textSize="80sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:backgroundTint="@color/darkBlue"
+            android:text="@string/button_2"
+            android:textSize="80sp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:backgroundTint="@color/darkBlue"
+            android:text="@string/button_3"
+            android:textSize="80sp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:backgroundTint="@color/darkBlue"
+            android:text="@string/button_4"
+            android:textSize="80sp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:backgroundTint="@color/darkBlue"
+            android:text="@string/button_5"
+            android:textSize="80sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/indicatorAreaLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/indicatorAreaBGColor"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leftMenuLayout" />
+
+    <FrameLayout
+        android:id="@+id/currentViewLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/currentActivityBGColor"
+        app:layout_constraintBottom_toTopOf="@+id/indicatorAreaLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/leftMenuLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

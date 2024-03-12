@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="neonBlue">#4c98fc</color>
+    <color name="darkBlue">#060043</color>
+    <color name="currentActivityBGColor">#2B2424</color>
+    <color name="indicatorAreaBGColor">#E6232323</color>
+    <color name="menuBGColor">#CD222223</color>
+</resources>
