@@ -3,4 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View1Fragment"/>
+    android:background="@color/currentActivityBGColor"
+    tools:context=".View1Fragment" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="245dp"
+        android:layout_gravity="center"
+        android:text="Speedometer"
+        android:textColor="#FAC0C0"
+        android:textSize="170sp" />
+</FrameLayout>
