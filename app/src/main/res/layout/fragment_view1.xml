@@ -1,17 +1,153 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="860dp"
+    android:layout_height="870dp"
     android:background="@color/currentActivityBGColor"
     tools:context=".View1Fragment" >
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="245dp"
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="500dp"
         android:layout_gravity="center"
-        android:text="Speedometer"
-        android:textColor="#FAC0C0"
-        android:textSize="170sp" />
+        android:orientation="vertical"
+        android:background="@drawable/rounded_border"
+        android:padding="2dp">
+
+
+        <TextView
+            android:id="@+id/kmhLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="km/h"
+            android:textColor="#FFFCFC"
+            android:textAlignment="center"
+            android:textSize="130dp" />
+
+        <TextView
+            android:id="@+id/speedValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="999"
+            android:textSize="290dp"
+            android:textColor="#FFFCFC"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/turnLeft"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/turnleft" />
+
+    <ImageView
+        android:id="@+id/turnRight"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="675dp"
+        android:src="@drawable/turnright" />
+
+    <ImageView
+        android:id="@+id/lahiTuli"
+        android:layout_width="165dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="190dp"
+        android:src="@drawable/lahituli" />
+
+    <ImageView
+        android:id="@+id/paevaTuli"
+        android:layout_width="165dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="345dp"
+        android:src="@drawable/paevatuli" />
+
+    <ImageView
+        android:id="@+id/gabariitTuli"
+        android:layout_width="175dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="505dp"
+        android:src="@drawable/gabariittuli" />
+
+    <ImageView
+        android:id="@+id/handBrake"
+        android:layout_width="175dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="250dp"
+        android:src="@drawable/handbrake" />
+
+    <ImageView
+        android:id="@+id/turvavoo"
+        android:layout_width="175dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="680dp"
+        android:src="@drawable/turvavoo" />
+
+    <ImageView
+        android:id="@+id/dooropen"
+        android:layout_width="175dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="500dp"
+        android:src="@drawable/dooropen" />
+
+    <ImageView
+        android:id="@+id/pesuVedelik"
+        android:layout_width="175dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginStart="680dp"
+        android:src="@drawable/pesuvedelik" />
+
+    <TextView
+        android:id="@+id/p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="650dp"
+        android:layout_marginStart="100dp"
+        android:textColor="#FFFCFC"
+        android:textAlignment="center"
+        android:textSize="120dp"
+        android:text="P" />
+
+    <TextView
+        android:id="@+id/n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="650dp"
+        android:layout_marginStart="270dp"
+        android:textColor="#FFFCFC"
+        android:textAlignment="center"
+        android:textSize="120dp"
+        android:text="N" />
+
+    <TextView
+        android:id="@+id/r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="650dp"
+        android:layout_marginStart="470dp"
+        android:textColor="#FFFCFC"
+        android:textAlignment="center"
+        android:textSize="120dp"
+        android:text="R" />
+
+    <TextView
+        android:id="@+id/d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="650dp"
+        android:layout_marginStart="640dp"
+        android:textColor="#FFFCFC"
+        android:textAlignment="center"
+        android:textSize="120dp"
+        android:text="D" />
+
 </FrameLayout>

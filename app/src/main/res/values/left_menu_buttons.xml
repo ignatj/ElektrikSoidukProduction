@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="button_1">View nr.1</string>
-    <string name="button_2">View nr.2</string>
-    <string name="button_3">View nr.3</string>
-    <string name="button_4">View nr.4</string>
-    <string name="button_5">View nr.5</string>
+    <string name="button_1">Spidomeeter</string>
+    <string name="button_2">Näidikud</string>
+    <string name="button_3">Juhtpaneel</string>
+    <string name="button_4">ToImplement</string>
+    <string name="button_5">ToImplement</string>
 </resources>

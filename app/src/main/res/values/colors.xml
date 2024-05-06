@@ -7,4 +7,6 @@
     <color name="currentActivityBGColor">#2B2424</color>
     <color name="indicatorAreaBGColor">#E6232323</color>
     <color name="menuBGColor">#CD222223</color>
+    <color name="transparent">#00000000</color>
 </resources>
+

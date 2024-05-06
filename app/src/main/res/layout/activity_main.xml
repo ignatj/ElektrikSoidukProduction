@@ -8,117 +8,370 @@
     android:animateLayoutChanges="false"
     android:animationCache="false"
     android:background="@color/menuBGColor"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <LinearLayout
-        android:id="@+id/leftMenuLayout"
+        android:id="@+id/buttonZone"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginEnd="1490sp"
-        android:layout_marginBottom="130dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="810dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:background="@color/menuBGColor"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="80sp"
-            android:backgroundTint="@color/darkBlue"
-            android:text="@string/button_1"
-            android:textSize="80sp" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30sp"
-            android:backgroundTint="@color/darkBlue"
-            android:text="@string/button_2"
-            android:textSize="80sp" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30sp"
-            android:backgroundTint="@color/darkBlue"
-            android:text="@string/button_3"
-            android:textSize="80sp" />
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30sp"
-            android:backgroundTint="@color/darkBlue"
-            android:text="@string/button_4"
-            android:textSize="80sp" />
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30sp"
-            android:backgroundTint="@color/darkBlue"
-            android:text="@string/button_5"
-            android:textSize="80sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/indicatorAreaLayout"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:background="@color/indicatorAreaBGColor"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/leftMenuLayout" >
+        app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="0dp"
+        <LinearLayout
+            android:id="@+id/vehicleButtonZone"
+            android:layout_width="165dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            app:srcCompat="@android:drawable/ic_menu_call" />
+            android:layout_marginStart="35dp"
+            android:orientation="vertical" >
 
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            app:srcCompat="@android:drawable/ic_menu_recent_history" />
+            <ImageButton
+                android:id="@+id/vehiclePictureButton"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vehicle"
+                android:contentDescription="Vehicle Icon" />
 
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            app:srcCompat="@android:drawable/ic_menu_camera" />
+            <TextView
+                android:id="@+id/vehicleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:text="VEHICLE"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="33dp"
+                android:contentDescription="Vehicle Label" />
+        </LinearLayout>
 
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="wrap_content"
+
+
+        <LinearLayout
+            android:id="@+id/volumeButtonZone"
+            android:layout_width="165dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            app:srcCompat="@android:drawable/ic_lock_idle_charging" />
+            android:layout_marginStart="15dp"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/volumePictureButton"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/volume"
+                android:contentDescription="Volume Icon" />
+
+            <TextView
+                android:id="@+id/volumeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:text="VOLUME"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="33dp"
+                android:contentDescription="Volume Label" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/cameraButtonZone"
+            android:layout_width="165dp"
+            android:layout_marginStart="15dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <ImageButton
+                android:id="@+id/cameraPictureButton"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/camera"
+                android:contentDescription="Camera Icon" />
+
+            <TextView
+                android:id="@+id/cameraText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:text="CAMERA"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="33dp"
+                android:contentDescription="Camera Label" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/coolingButtonZone"
+            android:layout_width="165dp"
+            android:layout_marginStart="15dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <ImageButton
+                android:id="@+id/coolingPictureButton"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/cooling"
+                android:contentDescription="Cooling Icon" />
+
+            <TextView
+                android:id="@+id/coolingText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:text="COOLING"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="33dp"
+                android:contentDescription="Cooling Label" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timeZone"
+            android:layout_width="240dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_border"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/clockTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <TextView
+                android:id="@+id/batteryChargeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Battery charge:"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/batteryChargeValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="74%"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="50dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phoneButtonZone"
+            android:layout_width="165dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <ImageButton
+                android:id="@+id/phonePictureButton"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/phone"
+                android:contentDescription="Phone Icon" />
+
+            <TextView
+                android:id="@+id/phoneText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:text="PHONE"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="33dp"
+                android:contentDescription="Phone Label" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navigationButtonZone"
+            android:layout_width="165dp"
+            android:layout_marginStart="15dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <ImageButton
+                android:id="@+id/naviPictureButton"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/navigation"
+                android:contentDescription="Navi Icon" />
+
+            <TextView
+                android:id="@+id/naviText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:text="NAVI"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="33dp"
+                android:contentDescription="Navi Label" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/appsButtonZone"
+            android:layout_width="165dp"
+            android:layout_marginStart="15dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <ImageButton
+                android:id="@+id/appsPictureButton"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/application"
+                android:contentDescription="Apps Icon" />
+
+            <TextView
+                android:id="@+id/appsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:text="APPS"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="33dp"
+                android:contentDescription="Apps Label" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/musicButtonZone"
+            android:layout_width="165dp"
+            android:layout_marginStart="15dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <ImageButton
+                android:id="@+id/musicPictureButton"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/music"
+                android:contentDescription="Music Icon" />
+
+            <TextView
+                android:id="@+id/musicText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:text="MUSIC"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="33dp"
+                android:contentDescription="Music Label" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/comfortButtonZone"
+            android:layout_width="165dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <ImageButton
+                android:id="@+id/comfortPictureButton"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/comfort"
+                android:contentDescription="Comfort Icon" />
+
+            <TextView
+                android:id="@+id/comfortText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:text="COMFORT"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="33dp"
+                android:contentDescription="Comfort Label" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
     <FrameLayout
-        android:id="@+id/currentViewLayout"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@color/currentActivityBGColor"
-        app:layout_constraintBottom_toTopOf="@+id/indicatorAreaLayout"
+        android:id="@+id/CurrFragmentLeft"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="1050dp"
+        android:layout_marginBottom="200dp"
+        android:background="@color/menuBGColor"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/leftMenuLayout"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
     </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/currFragmentRight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="890dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="200dp"
+        android:background="@color/menuBGColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.018518519" />
 </androidx.constraintlayout.widget.ConstraintLayout>
