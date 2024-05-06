@@ -44,6 +44,8 @@ public class View1Fragment extends Fragment {
     private TextView d;
     private Handler handler;
     private boolean shouldRun = true;
+    private Integer mockSpeed = 50;
+    boolean lahebUles = true;
 
     @Nullable
     @Override
@@ -158,7 +160,18 @@ public class View1Fragment extends Fragment {
     }
 
     private int getSpeed() {
-        return 99;
+        if (mockSpeed < 100 && lahebUles) {
+            return mockSpeed++;
+        }
+        if (mockSpeed == 100) {
+            lahebUles = false;
+        }
+        mockSpeed--;
+        if (mockSpeed < 50) {
+            lahebUles = true;
+        }
+        return mockSpeed;
+
     }
 
     //@Override
