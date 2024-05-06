@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="1020dp"
+    android:layout_height="870dp"
     android:background="@color/currentActivityBGColor"
     tools:context=".View6Fragment" >
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="245dp"
-        android:layout_gravity="center"
-        android:text="Fragment6"
-        android:textColor="#FAC0C0"
-        android:textSize="170sp" />
+    <FrameLayout
+        android:id="@+id/mapContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="2dp"> <!-- Adjust padding to your preference -->
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="FragmentTagUsage" />
+
+    </FrameLayout>
+
 </FrameLayout>
