@@ -67,6 +67,7 @@ public class View1Fragment extends Fragment {
         r = view.findViewById(R.id.r);
         d = view.findViewById(R.id.d);
 
+        shouldRun = true;
         handler = new Handler();
         startUpdateLoop();
 
@@ -174,11 +175,11 @@ public class View1Fragment extends Fragment {
 
     }
 
-    //@Override
-    //public void onDestroyView() {
-        //super.onDestroyView();
-        //shouldRun = false;
-    //}
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        shouldRun = false;
+    }
 }
 
 
